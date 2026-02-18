@@ -46,7 +46,7 @@ def labTopology():
     print("*** Starting web server on server")
     server.cmd('cd /tmp')
     server.cmd('echo "Hello from Mininet Server!" > index.html')
-    server.cmd('python -m SimpleHTTPServer 80 &')
+    server.cmd('python3 -m http.server 8000 &')
     
     print("\n*** Lab topology ready for packet capture")
     print("*** Use 'xterm server' to open a terminal on the server")
